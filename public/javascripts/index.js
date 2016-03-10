@@ -6,5 +6,11 @@
       $element.find('div').animate({ height: progressBarHeight }, 500).html(score);
   }
 
-  progress(60, $('#progressBar'));
+    (function worker() {
+      $.get('/counter', function(data) {
+          progress(data, $('#progressBar'));
+          setTimeout(worker, 1000);
+        });
+    })();
+
 }());
