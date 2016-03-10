@@ -8,12 +8,15 @@ router.get('/', function(req, res, next) {
   res.render('index', { title: 'Hack24 Pointless' });
 });
 
+router.get('/admin', function(req, res, next) {
+  res.render('admin', { title: 'Hack24 Pointless' });
+});
+
 router.get('/counter', function(req, res) {
   res.send(counter);
 });
 
 router.post('/counter', function(req, res) {
-  console.log(req.body);
   counter = req.body.counter;
   res.status(200);
   res.end();
