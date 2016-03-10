@@ -1,0 +1,34 @@
+body {
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  margin: auto;
+  width: 80%;
+  border: 3px solid #73AD21;
+  padding: 10px;
+}
+
+a {
+  color: #00B7FF;
+}
+
+#titleimg {
+  display: block;
+  margin-left: auto;
+  margin-right: auto
+}
+
+#progressBar {
+  margin: auto;
+  width: 300px;
+  height: 500px;
+  border: 10px solid green;
+  background-color: #cc0000;
+}
+
+#progressBar div {
+  height: 0%;
+  color: #fff;
+  text-align: center;
+  line-height: 500px; /* same as #progressBar height if we want text middle aligned */
+  width: 100%;
+  background-color: #292929;
+}
