@@ -32,3 +32,10 @@ a {
   width: 100%;
   background-color: #292929;
 }
+
+#number {
+  font: 50px "Lucida Grande", Helvetica, Arial, sans-serif;
+  height: 0%;
+  color: #000;
+  text-align: center;
+}

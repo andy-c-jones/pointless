@@ -4,9 +4,10 @@
       var progressBarHeight = percent * $element.height() / 100;
       $element.find('div').animate(
         { height: progressBarHeight },
-        percent * 20,
+        500,
         function() {
-          $element.find('div').html(score);
+          $(number).html(score);
+          return true;
         });
   };
 
