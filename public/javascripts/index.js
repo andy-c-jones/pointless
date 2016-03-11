@@ -8,7 +8,7 @@
         function() {
           if(score === "101") {
             $(number).html("--");
-          } elseif(score === "102") {
+          } else if(score === "102") {
             $(number).html("X");
           }
           else {
