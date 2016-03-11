@@ -6,11 +6,14 @@
         { height: progressBarHeight },
         500,
         function() {
-          if(score !== "101") {
-            $(number).html(score);
+          if(score === "101") {
+            $(number).html("--");
+          }
+          if(score === "102") {
+            $(number).html("X");
           }
           else {
-            $(number).html("--");
+            $(number).html(score);
           }
           return true;
         });

@@ -6,7 +6,6 @@
     $.post('/counter', { counter: "101" });
   });
   $('#wrong').click(function() {
-    $.post('/counter', { counter: "100" });
-    $.post('/counter', { counter: "X" });
+    $.post('/counter', { counter: "102" });
   });
 }());
