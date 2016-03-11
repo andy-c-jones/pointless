@@ -17,6 +17,7 @@ router.get('/counter', function(req, res) {
 });
 
 router.post('/counter', function(req, res) {
+  console.log(req.body.counter)
   counter = req.body.counter;
   res.status(200);
   res.end();
