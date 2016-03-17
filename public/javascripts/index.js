@@ -2,6 +2,7 @@
   function progress(score, $element) {
       var percent = 100 - score;
       var progressBarHeight = percent * $element.height() / 100;
+
       $element.find('div').animate(
         { height: progressBarHeight },
         500,
@@ -18,10 +19,20 @@
         });
   };
 
-  (function worker() {
+  (function counterWorker() {
     $.get('/counter', function(data) {
         progress(data, $(progressBar));
-        setTimeout(worker, 1000);
+        setTimeout(counterWorker, 1000);
+      });
+  })();
+
+  (function scoreWorker() {
+    $.get('/scores', function(data) {
+        $(scoreOne).html(data.one);
+        $(scoreTwo).html(data.two);
+        $(scoreThree).html(data.three);
+        $(scoreFour).html(data.four);
+        setTimeout(scoreWorker, 1000);
       });
   })();
 }());

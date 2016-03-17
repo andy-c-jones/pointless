@@ -1,13 +1,21 @@
 body {
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  font: 20px "Lucida Grande", Helvetica, Arial, sans-serif;
   margin: auto;
   width: 80%;
-  border: 3px solid #73AD21;
   padding: 10px;
 }
 
-a {
-  color: #00B7FF;
+scoreText {
+  font: 32px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+#container {
+  overflow:auto;
+}
+
+#scores {
+  float:right;
+  width: 50%;
 }
 
 #titleimg {
@@ -17,8 +25,9 @@ a {
 }
 
 #progressBar {
+  float:left;
   margin: auto;
-  width: 300px;
+  width: 40%;
   height: 500px;
   border: 10px solid green;
   background-color: #cc0000;
@@ -35,6 +44,8 @@ a {
 
 #number {
   font: 50px "Lucida Grande", Helvetica, Arial, sans-serif;
+  float:left;
+  width: 40%;
   height: 0%;
   color: #000;
   text-align: center;

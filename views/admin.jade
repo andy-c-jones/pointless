@@ -3,11 +3,39 @@ extends layout
 block content
   input(type='text' id="counterInput")
   button(id="submit")
-    'Submit'
+    text Submit
   button(id="reset")
-    'Reset'
+    text Reset
   button(id="wrong")
-    'Wrong'
+    text Wrong
+  p
+  div Team One
+  input(type='text' id="TeamOne")
+  button(id="updateOne")
+      text Update
+  button(id="resetOne")
+      text Reset
+  p
+  div Team Two
+  input(type='text' id="TeamTwo")
+  button(id="updateTwo")
+    text Update
+  button(id="resetTwo")
+    text Reset
+  p
+  div Team Three
+  input(type='text' id="TeamThree")
+  button(id="updateThree")
+      text Update
+  button(id="resetThree")
+      text Reset
+  p
+  div Team Four
+  input(type='text' id="TeamFour")
+  button(id="updateFour")
+      text Update
+  button(id="resetFour")
+      text Reset
 
   script(src='https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js')
   script(src='javascripts/admin.js')

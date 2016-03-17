@@ -2,8 +2,18 @@ extends layout
 
 block content
   img(src='images/hack24logo.png' id='titleimg')
-  div(id="progressBar")
-    div
+  div(id="container")
+    div(id="progressBar")
+      div
+    div(id="scores")
+      scoreText Team One:
+        div(id="scoreOne")
+      scoreText Team Two:
+        div(id="scoreTwo")
+      scoreText Team Three:
+        div(id="scoreThree")
+      scoreText Team Four:
+        div(id="scoreFour")
   div(id="number")
   script(src='https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js')
   script(src='javascripts/index.js')
